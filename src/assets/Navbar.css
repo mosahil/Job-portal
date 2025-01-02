@@ -2,7 +2,7 @@
 
 .navbar-container {
     background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     padding: 1rem 0;
   }
   
@@ -21,10 +21,11 @@
     color: #6b46c1;
     text-decoration: none;
     transition: color 0.2s ease;
+    display: flex;
   }
-  
-  .navbar-logo:hover {
-    color: #553c9a;
+
+  .navbar-logo img {
+    height: 40px;
   }
   
   .navbar-links {
@@ -41,23 +42,26 @@
   }
   
   .navbar-link:hover {
-    color: #6b46c1;
+    color: #6300B3;
   }
   
   .navbar-button {
-    background-color: #6b46c1;
-    color: white;
+    /* background-color: #6300B3; */
+    color: #6300B3;
     padding: 0.75rem 2rem;
     font-size: 1.1rem;
     font-weight: 600;
+    border: 1px solid #6300B3;
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.2s ease;
+    
   }
   
   .navbar-button:hover {
-    background-color: #553c9a;
+    background-color: #6300B3;
+    color: white;
   }
   
   @media (max-width: 768px) {

@@ -56,6 +56,11 @@
   
   /* Hover Effect for Apply Button */
   .apply-button:hover {
-    background-color: #6B21A8; /* Darker purple */
+    background-color: #6300B3; /* Darker purple */
+  }
+
+  .cardcontainer{
+    display: flex;
+    margin: 0 30px;
   }
   

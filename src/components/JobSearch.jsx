@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../assets/JobSearch.css"; // Import the new custom CSS file
+import herologo from "../assets/hero-logo.png"; // Import the logo image
 
 const JobSearch = ({ onSearch }) => {
   const [jobTitle, setJobTitle] = useState("");
@@ -12,8 +13,10 @@ const JobSearch = ({ onSearch }) => {
 
   return (
     <div className="job-search-container">
+      
       <div className="container mx-auto">
-        <h1 className="job-search-title">Job Search</h1>
+        <h1 className="job-search-title">Get your dream job with Venus Placements.</h1>
+        <p className="job-search-subtitle">Search for your desired job matching your skills</p>
 
         <form onSubmit={handleSubmit} className="job-search-form">
           <input
@@ -34,6 +37,9 @@ const JobSearch = ({ onSearch }) => {
             Search
           </button>
         </form>
+      </div>
+      <div className="herobox">
+        <img src={herologo} alt="Job Search" classname="herologo" />
       </div>
     </div>
   );

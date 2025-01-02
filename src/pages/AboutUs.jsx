@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className="container mx-auto py-10 text-center">
         <h1 className="text-4xl font-bold">About Us</h1>
         <p className="text-gray-600 mt-4">
-          AlwaysApply is your trusted platform for finding the best job
+          venusplacements is your trusted platform for finding the best job
           opportunities tailored to your skills and preferences.
         </p>
       </div>

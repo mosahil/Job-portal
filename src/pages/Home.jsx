@@ -58,7 +58,8 @@ const Home = () => {
       <Navbar />
       <div className="container mx-auto px-6 py-10">
         <JobSearch onSearch={handleSearch} />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <h1 className="jobs-heading" >All Jobs</h1>
+        <div className="cardcontainer">
           {error ? (
             <p className="text-center text-red-500">{error}</p>
           ) : searchedJobs.length > 0 ? (
