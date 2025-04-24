@@ -57,11 +57,11 @@ const Home = () => {
     <div className="bg-gray-50 min-h-screen">
       <Navbar />
       <div className="container mx-auto px-6 py-10">
-        <JobSearch onSearch={handleSearch} />
-        <h1 className="jobs-heading" >All Jobs</h1>
-        <div className="cardcontainer">
+        <JobSearch onSearch={handleSearch}/>
+        <h1 className="jobs-heading">All Jobs</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           {error ? (
-            <p className="text-center text-red-500">{error}</p>
+            <p className="text-center text-red-500 col-span-full">{error}</p>
           ) : searchedJobs.length > 0 ? (
             searchedJobs.map((job) => <JobCard key={job.ID} job={job} />)
           ) : (

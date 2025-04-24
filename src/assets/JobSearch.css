@@ -1,14 +1,15 @@
 /* JobSearch.css */
 
 .job-search-container {
-    background-color: #efe2f8b0;
-    padding: 0.5rem 0;
-    height: 350px;
-    margin: 0 30px;
+    background-color: #efe2f8b0; /* Light purple background */
+    padding: 1rem; /* Increased padding for better spacing */
+    margin: 1rem; /* Margin around the container */
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
   }
   
   .job-search-title {
@@ -19,13 +20,14 @@
     text-align: center;
   }
 
-  .job-search-subtitle{
-    text-align: center;
+  .job-search-subtitle {
+    text-align: center; /* Center the subtitle text */
+    margin-bottom: 1rem;
   }
   
   .job-search-form {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -60,21 +62,44 @@
   }
   
   .herobox {
-   
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-top: 1rem;
   }
+  
   .herobox img {
-   height: 300px;
+    max-width: 100%; /* Ensure image fits inside the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 250px; /* Limit the maximum height of the image */
   }
-
-  @media (max-width: 768px) {
+  
+  @media (max-width: 1024px) {
+    .job-search-container{
+        margin: 0;
+    }
+    .job-search-form {
+        flex-direction: column;
+      }
+  }
+  
+  @media (max-width: 767px) {
     .job-search-form {
       flex-direction: column;
-      gap: 1rem;
+      gap: 0.5rem;
     }
   
     .job-search-input,
     .job-search-button {
       width: 100%;
     }
+  }
+  @media (max-width: 480px) {
+    .job-search-title {
+      font-size: 1.5rem; /* Reduce font size on smaller screens */
+    }
+    .herobox img {
+        max-height: 150px; /* Further reduce max height on very small screens */
+      }
   }
   
